@@ -1,0 +1,34 @@
+datasource db {
+   provider = "postgresql"
+   url      = env("DATABASE_URL")
+}
+
+generator client {
+   provider = "prisma-client-js"
+}
+
+model customers {
+   id         String   @id @default(uuid()) @db.VarChar(255)
+   name       String   @db.VarChar(255)
+   email      String   @unique @db.VarChar(255)
+   password   String   @db.VarChar(255)
+   createdAt  DateTime @default(now()) @db.Timestamp(6)
+   isVerified Boolean  @default(false) @db.Boolean
+   isMerchant Boolean  @default(false) @db.Boolean
+}
+
+model products {
+   id              Int     @id @default(autoincrement())
+   gender          String? @db.VarChar(16)
+   master_category String  @db.VarChar(32)
+   sub_category    String? @db.VarChar(32)
+   article_type    String? @db.VarChar(32)
+   base_colour     String  @db.VarChar(32)
+   season          String? @db.VarChar(32)
+   release_year    Int     @db.Integer()
+   product_usage   String? @db.VarChar(32)
+   display_name    String  @db.VarChar(255)
+   price           BigInt  @default(0) @db.BigInt()
+   discount        BigInt  @default(0) @db.BigInt()
+   url             String  @default("") @db.VarChar(255)
+}
