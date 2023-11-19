@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,14 +16,14 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+.center-75 {
+   @apply w-[75%] max-w-[1280px] h-full flex items-center justify-between m-auto;
+}

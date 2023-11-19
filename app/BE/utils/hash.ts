@@ -25,6 +25,6 @@ export const validatePassword = async ({
       return valid
    } catch (e: any) {
       console.log("An error occured while validating password")
-      return {}
+      return false
    }
 }

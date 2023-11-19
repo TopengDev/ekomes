@@ -33,3 +33,21 @@ export const initialProductSearchRequest: TProductSearchDTO = {
    discount_gt: 0,
    discount_lt: 0,
 }
+
+export type TNewProductRequest = {
+   master_category: string
+   base_colour: string
+   release_year: number
+   display_name: string
+   price: number
+   url: string
+}
+
+export const initialNewProductRequest: TNewProductRequest = {
+   master_category: "",
+   base_colour: "",
+   release_year: 0,
+   display_name: "",
+   price: 0,
+   url: "",
+}

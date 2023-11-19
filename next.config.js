@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+   images: {
+      remotePatterns: [
+         { hostname: "assets.myntassets.com" },
+         { hostname: "**" },
+      ],
+   },
+}
 
 module.exports = nextConfig

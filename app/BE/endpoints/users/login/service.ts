@@ -3,10 +3,7 @@ import { formatResp } from "@/app/BE/utils/formatResp"
 import { validatePassword } from "@/app/BE/utils/hash"
 import { tokenize } from "@/app/BE/utils/jwt"
 import { parseRequest } from "@/app/BE/utils/parseRequest"
-import {
-   TCustomer,
-   initialNewCustomer,
-} from "@/app/interfaces/DTOs/customer.dto"
+import { TCustomer } from "@/app/interfaces/DTOs/customer.dto"
 import { PrismaClient } from "@prisma/client"
 
 const prisma = new PrismaClient()
@@ -19,7 +16,7 @@ export const logUserIn = async ({ reqData }: { reqData: Request }) => {
    // validate fields
    const validated = validateField<loginReqData>({
       data: reqJson,
-      initialData: initialNewCustomer,
+      initialData: { email: "", password: "" },
    })
    if (!validated.isValid)
       return formatResp({
