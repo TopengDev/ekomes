@@ -56,54 +56,56 @@ function RegisterCard() {
 
    return (
       <ModalOverlay open={true}>
-         <div className='bg-white rounded-xl w-[45%] h-[65%] flex justify-center items-center relative max-w-[700px] max-h-[845px] px-10 py-12 flex-col drop-shadow-xl'>
+         <div className='bg-light-white rounded-xl w-[45%] h-[65%] flex justify-center items-center relative max-w-[700px] max-h-[845px] px-10 py-12 flex-col drop-shadow-xl'>
             <ToastContainer />
             {/* <div className='flex justify-center items-center absolute w-48 h-48 hover:text-xl  top-0 right-0'>
                <button className='z-40' onClick={() => setOpen(false)}>
                   <i className='fa-solid fa-circle-xmark fa-beat fa-2xl color-[#ee6467]'></i>
                </button>
             </div> */}
-            <div className='flex justify-around items-center flex-col w-full h-full gap-10 relative py-32 px-12 rounded-xl'>
+            <div className='flex justify-around items-center flex-col w-full h-full gap-10 relative py-32 px-12 rounded-xl bg-light-white'>
                <div className=''>
-                  <h1 className='text-4xl font-bold'>Registration</h1>
+                  <h1 className='text-4xl font-bold bg-light-white'>
+                     Registration
+                  </h1>
                </div>
-               <div className='w-full flex flex-col gap-6'>
-                  <div className='flex flex-col w-full gap-4'>
+               <div className='w-full flex flex-col gap-6 bg-light-white'>
+                  <div className='flex flex-col w-full gap-4 bg-light-white'>
                      <label
                         htmlFor=''
-                        className='text-black text-2xl font-medium'
+                        className='text-black text-2xl font-medium bg-light-white'
                      >
                         Email
                      </label>
                      <input
                         type='email'
-                        className='h-[48px] rounded-xl p-4'
+                        className='h-[48px] rounded-xl p-4 bg-light-white border-solid border-gray border-[1px] opacity-50'
                         ref={emailRef}
                      />
                   </div>
-                  <div className='flex flex-col w-full gap-4'>
+                  <div className='flex flex-col w-full gap-4 bg-light-white'>
                      <label
                         htmlFor=''
-                        className='text-black text-2xl font-medium'
+                        className='text-black text-2xl font-medium bg-light-white'
                      >
                         Name
                      </label>
                      <input
                         type='text'
-                        className='h-[48px] rounded-xl p-4'
+                        className='h-[48px] rounded-xl p-4 bg-light-white border-solid border-gray border-[1px] opacity-50'
                         ref={nameRef}
                      />
                   </div>
-                  <div className='flex flex-col w-full gap-4'>
+                  <div className='flex flex-col w-full gap-4 bg-light-white'>
                      <label
                         htmlFor=''
-                        className='text-black text-2xl font-medium'
+                        className='text-black text-2xl font-medium bg-light-white'
                      >
                         Password
                      </label>
                      <input
                         type='password'
-                        className='h-[48px] rounded-xl p-4'
+                        className='h-[48px] rounded-xl p-4 bg-light-white border-solid border-gray border-[1px] opacity-50'
                         ref={passwordRef}
                      />
                   </div>
@@ -125,8 +127,11 @@ function RegisterCard() {
                            )}
                         </button>
                      </div>
-                     <div className='text-blue-400 font-medium hover:text-black transition-all duration-150'>
-                        <a href='/FE/routes/user/login' className=''>
+                     <div className='text-blue-400 font-medium hover:text-black transition-all duration-150 bg-light-white'>
+                        <a
+                           href='/FE/routes/user/login'
+                           className='bg-light-white'
+                        >
                            Login
                         </a>
                      </div>

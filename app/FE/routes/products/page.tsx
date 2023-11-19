@@ -55,20 +55,20 @@ export default async function Page() {
                               objectFit='cover'
                            />
                         </div>
-                        <div className='flex flex-col justify-between flex-grow'>
+                        <div className='flex flex-col justify-between flex-grow bg-light-white'>
                            <div>
-                              <h3 className='text-2xl text-dark-gray font-medium'>
+                              <h3 className='text-2xl text-dark-gray font-medium bg-light-white'>
                                  {product.display_name}
                               </h3>
-                              <div className='flex w-full items-center'>
-                                 <h4 className='text-base text-gray font-medium'>
+                              <div className='flex w-full items-center bg-light-white'>
+                                 <h4 className='text-base text-gray font-medium bg-light-white'>
                                     {product.gender}
                                  </h4>
                               </div>
                            </div>
-                           <div className='flex justify-between'>
+                           <div className='flex justify-between bg-light-white'>
                               <div>
-                                 <h2 className='text-xl text-light-red font-bold'>
+                                 <h2 className='text-xl text-light-red font-bold bg-light-white'>
                                     Rp. {numberWithCommas(product.price)}
                                  </h2>
                               </div>

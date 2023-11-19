@@ -46,53 +46,53 @@ export default function Page() {
                         objectFit='cover'
                      />
                   </div>
-                  <div className='flex flex-col justify-between flex-grow'>
-                     <div>
-                        <h3 className='text-3xl text-dark-gray font-bold'>
+                  <div className='flex flex-col justify-between flex-grow bg-light-white'>
+                     <div className='bg-light-white'>
+                        <h3 className='text-3xl text-dark-gray font-bold bg-light-white'>
                            {product.display_name}
                         </h3>
-                        <div className='flex w-full items-center'>
-                           <h4 className='text-base text-gray font-medium'>
+                        <div className='flex w-full items-center bg-light-white'>
+                           <h4 className='text-base text-gray font-medium bg-light-white'>
                               {product.gender}
                            </h4>
                         </div>
                      </div>
-                     <div>
-                        <h4 className='text-2xl text-dark-gray font-bold'>
+                     <div className='bg-light-white'>
+                        <h4 className='text-2xl text-dark-gray font-bold bg-light-white'>
                            {product.product_usage}
                         </h4>
                      </div>
                      <div>
-                        <h4 className='text-lg text-dark-gray font-bold'>
+                        <h4 className='text-lg text-dark-gray font-bold bg-light-white'>
                            {product.base_colour}
                         </h4>
-                        <div className='flex w-full items-center'>
-                           <h4 className='text-lg text-dark-gray font-medium'>
+                        <div className='flex w-full items-center bg-light-white'>
+                           <h4 className='text-lg text-dark-gray font-medium bg-light-white'>
                               {product.article_type}
                            </h4>
                         </div>
-                        <div className='flex w-full items-center'>
-                           <h4 className='text-lg text-dark-gray font-medium'>
+                        <div className='flex w-full items-center bg-light-white'>
+                           <h4 className='text-lg text-dark-gray font-medium bg-light-white'>
                               Released on {product.release_year}
                            </h4>
                         </div>
-                        <div className='flex w-full items-center'>
-                           <h4 className='text-lg text-dark-gray font-medium'>
+                        <div className='flex w-full items-center bg-light-white'>
+                           <h4 className='text-lg text-dark-gray font-medium bg-light-white'>
                               Best to wear on {product.season}
                            </h4>
                         </div>
                      </div>
-                     <div className='flex justify-between items-end'>
+                     <div className='flex justify-between items-end bg-light-white'>
                         <div>
-                           <h3 className='text-3xl text-gray font-bold'>
+                           <h3 className='text-3xl text-gray font-bold bg-light-white'>
                               {product.master_category}
                            </h3>
-                           <h4 className='text-base text-gray font-medium'>
+                           <h4 className='text-base text-gray font-medium bg-light-white'>
                               {product.sub_category}
                            </h4>
                         </div>
                         <div>
-                           <h2 className='text-xl text-light-red font-bold'>
+                           <h2 className='text-xl text-light-red font-bold bg-light-white'>
                               Rp. {numberWithCommas(product.price || 0)}
                            </h2>
                         </div>

@@ -223,7 +223,7 @@ export const Inputs = ({
                      </label>
                      <input
                         type={input.type || "text"}
-                        className='h-[48px] rounded-xl p-4'
+                        className='h-[48px] rounded-xl p-4 border-solid border-gray border-[1px] opacity-50'
                         ref={input.ref}
                      />
                   </div>
